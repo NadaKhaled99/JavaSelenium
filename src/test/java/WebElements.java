@@ -23,10 +23,12 @@ public class WebElements {
 
         Thread.sleep(2000);
         driver.manage().window().maximize();
-        driver.quit();
+        quit();
     }
 
-
+    public void quit() {
+        driver.quit();
+    }
 }
 
 
@@ -55,7 +57,7 @@ public class WebElements {
     public void fullscreen() {
         driver.manage().window().fullscreen();
     }
-
+   
     public void quit() {
         driver.quit();
     }
