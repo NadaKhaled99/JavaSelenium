@@ -26,9 +26,7 @@ public class WebElements {
         driver.quit();
     }
 
-    public void quit() {
-        driver.quit();
-    }
+
 }
 
 
@@ -57,7 +55,7 @@ public class WebElements {
     public void fullscreen() {
         driver.manage().window().fullscreen();
     }
-    public void
+
     public void quit() {
         driver.quit();
     }
