@@ -108,7 +108,28 @@ has its properties
     driver.findElement(By.xpath("//input[@type = 'search']"));
         b-absolute--> begin from the beginning of my file rom first HTML and so on
     driver.findElement(By.xpath("/html/body/div[1]/[attribute = 'value']"));
-    i-cssSelector
-    j-ChroPath
+    i-cssSelector --> uses CSS to locate elements inside my webpage
+    driver.findElement(By.cssSelector("#id"));
+    driver.findElement(By.cssSelector(".classname"));
+    driver.findElement(By.cssSelector("[attribute=value]"));
+    driver.findElement(By.cssSelector("input#username")).sendKeys("tomsmith");//  i need to interact with this elements
+    driver.findElement(By.cssSelector("input#password")).sendKeys("SuperSecretPassword!");
+    driver.findElement(By.cssSelector("button.radius")).click();
+    driver.findElement(By.linkText("/logout")).click();
+    j-ChroPath--> if i need to locate an element but i am not sure that i am able to find its locator
+                  so i  need to use XPath or any other attribute, target to identifying the element
+                  chrome extension called SelectorsHub that if we don't have time we can search with this extension
+                  1Rel cssSelector #twotabsearchtextbox
+                  1Rel XPath //input[@id='twotabsearchtextbox']
+                  1index XPath (//input[@id='twotabsearchtextbox'])[1]
+                  testRigor Path "بحث في Amazon.eg"
+                  1jQuery $("#twotabsearchtextbox")
+                  1JS Path document.querySelector("#twotabsearchtextbox")
+                  1id twotabsearchtextbox
+                  1name field-keywords
+                  2className nav-input nav-progressive-attribute
+                  1 Abs XPath /html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/input[1]
+                  43 3tagName input
 9) Thread.sleep(miles: 2000) --> it give a duration to wait
+
  */
