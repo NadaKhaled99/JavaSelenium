@@ -12,8 +12,6 @@ public class TagName {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com");
         driver.findElement(By.linkText("Sortable Data Tables")).click();
-        //driver.findElement(By.partialLinkText("Sortable")).click();
-        //driver.findElement(By.tagName("button")).click();
         WebElement table = driver.findElement(By.id("table1"));
         List<WebElement> tableRows = table.findElements(By.tagName("tr"));//save all tr in table
         System.out.println(tableRows.size());
